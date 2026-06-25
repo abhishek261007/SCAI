@@ -1,0 +1,135 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #04060F;
+  --card: #0B1120;
+  --border: rgba(0, 200, 255, 0.18);
+  --border-focus: rgba(0, 200, 255, 0.7);
+  --cyan: #00C8FF;
+  --cyan-dim: rgba(0, 200, 255, 0.10);
+  --violet: #9B7AFF;
+  --violet-dim: rgba(155, 122, 255, 0.14);
+  --text: #FFFFFF;
+  --text-secondary: #B8CCEE;
+  --text-dim: #7A9AC8;
+  --text-muted: #4A6490;
+  --error: #FF6B88;
+  --success: #00E5A0;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  line-height: 1.65;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 24px 80px;
+  flex: 1;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,200,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.field textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.65;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(0,200,255,0.6);
+  background: rgba(0,200,255,0.04);
+  box-shadow: 0 0 0 3px rgba(0,200,255,0.08), 0 0 24px rgba(0,200,255,0.06);
+}
+
+.channel label:hover {
+  border-color: rgba(0,200,255,0.32) !important;
+  background: rgba(0,200,255,0.05) !important;
+}
+
+.channel input[type="radio"]:checked + label {
+  border-color: rgba(0,200,255,0.65) !important;
+  background: rgba(0,200,255,0.07) !important;
+  box-shadow: 0 0 0 1px rgba(0,200,255,0.15), inset 0 1px 0 rgba(255,255,255,0.04) !important;
+}
+
+.channel input[type="radio"]:checked + label .channel-name {
+  color: var(--text) !important;
+}
+
+.channel input[type="radio"]:checked + label .channel-icon {
+  opacity: 1 !important;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 44px rgba(37,211,102,0.4), 0 8px 24px rgba(0,0,0,0.35) !important;
+}
+
+.whatsapp-btn:active {
+  transform: translateY(0);
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 48px rgba(0,200,255,0.38), 0 8px 28px rgba(0,0,0,0.35) !important;
+}
+
+button[type="submit"]:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 40px rgba(0,229,160,0.18); }
+  50%       { box-shadow: 0 0 65px rgba(0,229,160,0.32); }
+}
+
+@media (max-width: 560px) {
+  .card { padding: 28px 20px; }
+  .channel label { gap: 10px !important; padding: 14px 14px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
