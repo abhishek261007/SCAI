@@ -89,7 +89,7 @@ export default function Projects() {
         >
           <strong style={{ color: '#FF6B88', fontWeight: 600 }}>How it works:</strong> Register with
           your tentative project idea → refine it with mentor guidance → build and present at SCAI
-          2026 on 30 June at SVNIT Surat.
+          2026 on 2 August at SVNIT Surat.
         </div>
       </div>
 
