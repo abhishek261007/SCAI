@@ -151,8 +151,109 @@ export default function ProgramDescription() {
           The symposium is open to all undergraduate and graduate students. Teams of up to 3 members
           can register. There is no entry fee. All disciplines are welcome — projects should align
           with one of the three tracks. Selected projects will be displayed during the symposium at
-          SVNIT Surat on 30 June 2026.
+          SVNIT Surat on 2 August 2026.
         </p>
+      </div>
+
+      <div
+        style={{
+          marginTop: 28,
+          background: 'rgba(0,200,255,0.03)',
+          border: '1px solid rgba(0,200,255,0.10)',
+          borderRadius: 14,
+          padding: '32px 28px',
+        }}
+      >
+        <h3
+          style={{
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontSize: 17,
+            fontWeight: 600,
+            color: '#00C8FF',
+            marginBottom: 14,
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+          }}
+        >
+          What you get
+        </h3>
+        <div
+          style={{
+            display: 'grid',
+            gap: 12,
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          }}
+        >
+          {[
+            {
+              icon: '🎓',
+              title: 'Certificate of Participation',
+              desc: 'Official certificate from IEEE Student Branch, SVNIT Surat for all participants.',
+              color: '#00C8FF',
+            },
+            {
+              icon: '💻',
+              title: 'GitHub Repository',
+              desc: 'Your project lives on — we help you publish and archive your code under a GitHub repo.',
+              color: '#9B7AFF',
+            },
+            {
+              icon: '📣',
+              title: 'LinkedIn Post',
+              desc: 'Get featured on our official LinkedIn page showcasing your project and team.',
+              color: '#00E5A0',
+            },
+            {
+              icon: '🏆',
+              title: 'Mentorship & Feedback',
+              desc: 'Personalized feedback from industry mentors and judges on your project.',
+              color: '#FF6B88',
+            },
+          ].map(item => (
+            <div
+              key={item.title}
+              style={{
+                padding: '20px 18px',
+                background: 'rgba(255,255,255,0.02)',
+                border: `1px solid ${item.color}20`,
+                borderRadius: 10,
+                transition: 'all 0.25s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = `${item.color}08`
+                e.currentTarget.style.borderColor = `${item.color}40`
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'rgba(255,255,255,0.02)'
+                e.currentTarget.style.borderColor = `${item.color}20`
+              }}
+            >
+              <div style={{ fontSize: 28, marginBottom: 10 }}>{item.icon}</div>
+              <h4
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontSize: 15,
+                  fontWeight: 600,
+                  color: '#F0F6FF',
+                  marginBottom: 6,
+                }}
+              >
+                {item.title}
+              </h4>
+              <p
+                style={{
+                  color: '#7A9AC8',
+                  fontWeight: 300,
+                  lineHeight: 1.6,
+                  fontSize: 14,
+                  margin: 0,
+                }}
+              >
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

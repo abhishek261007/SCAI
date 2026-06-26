@@ -74,7 +74,7 @@ export default function Projects() {
           For SCAI 2026, each team is expected to come up with a <strong style={{ color: '#F0F6FF' }}>tentative project idea</strong>{' '}
           aligned with one of the three tracks. You don't need a fully built prototype at registration
           — just a clear concept and problem statement. After registration, teams will develop their
-          projects with guidance from mentors and present them at the symposium on 30 June 2026.
+          projects with guidance from mentors and present them at the symposium on 2 August 2026.
         </p>
         <div
           style={{

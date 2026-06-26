@@ -57,7 +57,7 @@ const howItWorks = [
   { step: '01', title: 'Register', desc: 'Form a team of up to 3 and submit your tentative project idea.', color: '#00C8FF' },
   { step: '02', title: 'Refine', desc: 'Develop your project with mentor guidance and support.', color: '#9B7AFF' },
   { step: '03', title: 'Build', desc: 'Create your working prototype or detailed implementation.', color: '#00E5A0' },
-  { step: '04', title: 'Present', desc: 'Showcase at SCAI 2026 on 30 June at SVNIT Surat.', color: '#FF6B88' },
+  { step: '04', title: 'Present', desc: 'Showcase at SCAI 2026 on 2 August at SVNIT Surat.', color: '#FF6B88' },
 ]
 
 export default function Landing() {
