@@ -134,7 +134,7 @@ export default function Register() {
           }}
         >
           Thanks for submitting to SCAI 2026. Your project has been recorded. Reach out to Amaan or
-          Divyang if you need to update any details before 30 June 2026.
+          Divyang if you need to update any details before the registration deadline on 30 June 2026.
         </p>
         <a
           href="https://chat.whatsapp.com/B6qedtDUedv7E86OeQTPgG"
@@ -239,7 +239,7 @@ export default function Register() {
             marginBottom: 28,
           }}
         >
-          {['Free entry', 'Max 3 per team', '30 June 2026 — SVNIT'].map(label => (
+          {['Free entry', 'Max 3 per team', 'Reg Deadline: 30 June — SVNIT'].map(label => (
             <span
               key={label}
               style={{

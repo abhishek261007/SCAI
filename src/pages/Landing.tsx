@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const stats = [
   { value: '3', label: 'Tracks' },
   { value: '∞', label: 'Innovation' },
-  { value: '30', label: 'June 2026' },
+  { value: '30', label: 'June — Reg Deadline' },
   { value: 'SVNIT', label: 'Surat' },
 ]
 
