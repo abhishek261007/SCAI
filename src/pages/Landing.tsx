@@ -113,19 +113,6 @@ export default function Landing() {
           </span>
         </h1>
 
-        <p
-          style={{
-            color: '#7A9AC8',
-            fontWeight: 300,
-            lineHeight: 1.6,
-            maxWidth: 520,
-            margin: '0 auto 36px',
-          }}
-        >
-          SVNIT Surat's premier hackathon exploring the convergence of
-          electronic systems, communication networks, and space technology.
-        </p>
-
         <div
           style={{
             display: 'flex',

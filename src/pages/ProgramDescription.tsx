@@ -11,45 +11,6 @@ export default function ProgramDescription() {
           marginBottom: 36,
         }}
       >
-        <h2
-          style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 26,
-            fontWeight: 700,
-            letterSpacing: '-0.02em',
-            marginBottom: 18,
-            background: 'linear-gradient(135deg, #fff, #00C8FF)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}
-        >
-          About SCAI 2026
-        </h2>
-        <p
-          style={{
-            color: '#B8CCEE',
-            fontWeight: 300,
-            lineHeight: 1.8,
-            marginBottom: 18,
-          }}
-        >
-          <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>SCAI 2026</strong> is SVNIT Surat's premier technical
-          hackathon focused on the convergence of electronic systems, advanced communication
-          networks, and space technology. Hosted by the IEEE Student Branch, SVNIT Surat, the
-          event brings together student innovators, researchers, and industry professionals to
-          showcase cutting-edge projects and exchange ideas.
-        </p>
-        <p
-          style={{
-            color: '#B8CCEE',
-            fontWeight: 300,
-            lineHeight: 1.8,
-          }}
-        >
-          Participants will present their work across three dedicated tracks,
-          compete for recognition, and gain exposure to real-world applications.
-        </p>
       </div>
 
       <div

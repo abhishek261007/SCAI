@@ -267,23 +267,6 @@ export default function Register() {
           ))}
         </div>
 
-        <div
-          style={{
-            fontWeight: 300,
-            color: '#B8CCEE',
-            padding: '16px 20px',
-            background: 'rgba(255,255,255,0.025)',
-            borderLeft: '2px solid #00C8FF',
-            borderRadius: '0 8px 8px 0',
-            lineHeight: 1.7,
-          }}
-        >
-          Queries on submissions or tracks — <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>
-            Amaan Ram
-          </strong>{' '}
-          8734990849 &middot;{' '}
-          <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>Divyang Patel</strong> 8320067392
-        </div>
       </div>
 
       <form id="reg-form" onSubmit={handleSubmit} noValidate>
@@ -634,6 +617,29 @@ export default function Register() {
           )}
         </div>
       </form>
+
+      <div
+        style={{
+          marginTop: 48,
+          fontWeight: 300,
+          color: '#B8CCEE',
+          padding: '20px 24px',
+          background: 'rgba(255,255,255,0.025)',
+          borderLeft: '2px solid #00C8FF',
+          borderRadius: '0 8px 8px 0',
+          lineHeight: 1.7,
+          fontSize: 21,
+        }}
+      >
+        <strong style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 13, fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#00C8FF', display: 'block', marginBottom: 8 }}>
+          Contact
+        </strong>
+        Queries on submissions or tracks — <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>
+          Amaan Ram
+        </strong>{' '}
+        8734990849 &middot;{' '}
+        <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>Divyang Patel</strong> 8320067392
+      </div>
     </div>
   )
 }
