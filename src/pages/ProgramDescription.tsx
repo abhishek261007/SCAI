@@ -34,11 +34,10 @@ export default function ProgramDescription() {
             marginBottom: 18,
           }}
         >
-          <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>SCAI 2026</strong> (Smart
-          Communication &amp; Artificial Intelligence) is SVNIT Surat's premier technical symposium
-          focused on the convergence of intelligent electronic systems, advanced communication
+          <strong style={{ color: '#F0F6FF', fontWeight: 500 }}>SCAI 2026</strong> is SVNIT Surat's premier technical
+          hackathon focused on the convergence of electronic systems, advanced communication
           networks, and space technology. Hosted by the IEEE Student Branch, SVNIT Surat, the
-          symposium brings together student innovators, researchers, and industry professionals to
+          event brings together student innovators, researchers, and industry professionals to
           showcase cutting-edge projects and exchange ideas.
         </p>
         <p
@@ -48,9 +47,7 @@ export default function ProgramDescription() {
             lineHeight: 1.8,
           }}
         >
-          This year's theme — <em style={{ color: '#00C8FF' }}>Connected Intelligence</em> —
-          explores how smart sensing, communication systems, and signal intelligence are shaping the
-          future of technology. Participants will present their work across three dedicated tracks,
+          Participants will present their work across three dedicated tracks,
           compete for recognition, and gain exposure to real-world applications.
         </p>
       </div>
@@ -77,12 +74,12 @@ export default function ProgramDescription() {
           {
             icon: '\u{1F3C6}',
             title: 'Project Challenge',
-            desc: 'A competitive hackathon-style challenge where teams build a solution within the symposium timeline from the given tracks.',
+            desc: 'A competitive hackathon-style challenge where teams build a solution within the event timeline from the given tracks.',
           },
           {
             icon: '\u{1F30D}',
             title: 'Industry Talks',
-            desc: 'Keynote sessions from leaders in intelligent systems, communication tech, and space applications.',
+            desc: 'Keynote sessions from leaders in embedded systems, communication tech, and space applications.',
           },
         ].map(item => (
           <div
@@ -148,9 +145,9 @@ export default function ProgramDescription() {
             lineHeight: 1.8,
           }}
         >
-          The symposium is open to all undergraduate and graduate students. Teams of up to 3 members
+          The event is open to all undergraduate and graduate students. Teams of up to 3 members
           can register. There is no entry fee. All disciplines are welcome — projects should align
-          with one of the three tracks. Selected projects will be displayed during the symposium at
+          with one of the three tracks. Selected projects will be displayed at
           SVNIT Surat on 2 August 2026.
         </p>
       </div>

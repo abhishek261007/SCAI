@@ -9,7 +9,7 @@ const tracks = [
       'IoT-based environmental monitoring systems',
       'Wearable health diagnostics devices',
       'Smart agriculture sensors and automation',
-      'AI-powered embedded systems for edge computing',
+      'Embedded systems for edge computing',
     ],
   },
   {
@@ -74,7 +74,7 @@ export default function Projects() {
           For SCAI 2026, each team is expected to come up with a <strong style={{ color: '#F0F6FF' }}>tentative project idea</strong>{' '}
           aligned with one of the three tracks. You don't need a fully built prototype at registration
           — just a clear concept and problem statement. After registration, teams will develop their
-          projects with guidance from mentors and present them at the symposium on 2 August 2026.
+          projects with guidance from mentors and present them on 2 August 2026 at SVNIT Surat.
         </p>
         <div
           style={{
@@ -88,8 +88,8 @@ export default function Projects() {
           }}
         >
           <strong style={{ color: '#FF6B88', fontWeight: 600 }}>How it works:</strong> Register with
-          your tentative project idea → refine it with mentor guidance → build and present at SCAI
-          2026 on 2 August at SVNIT Surat.
+          your tentative project idea → refine it with mentor guidance → build and present on
+          2 August at SVNIT Surat.
         </div>
       </div>
 

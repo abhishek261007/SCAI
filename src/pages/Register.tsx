@@ -6,11 +6,14 @@ const ENDPOINT =
 interface FormData {
   email: string
   leaderName: string
+  leaderCollege: string
   leaderContact: string
   altContact: string
   member2: string
+  member2College: string
   member2Contact: string
   member3: string
+  member3College: string
   member3Contact: string
   projectName: string
   track: string
@@ -21,11 +24,14 @@ export default function Register() {
   const [form, setForm] = useState<FormData>({
     email: '',
     leaderName: '',
+    leaderCollege: '',
     leaderContact: '',
     altContact: '',
     member2: '',
+    member2College: '',
     member2Contact: '',
     member3: '',
+    member3College: '',
     member3Contact: '',
     projectName: '',
     track: '',
@@ -54,6 +60,7 @@ export default function Register() {
       errs.email = 'Enter a valid email address.'
 
     if (!form.leaderName.trim()) errs.leaderName = 'Leader name is required.'
+    if (!form.leaderCollege.trim()) errs.leaderCollege = 'College name is required.'
     if (!form.leaderContact.trim()) errs.leaderContact = 'Contact number is required.'
     if (!form.altContact.trim()) errs.altContact = 'Alternate contact is required.'
     if (!form.projectName.trim()) errs.projectName = 'Project name is required.'
@@ -314,6 +321,21 @@ export default function Register() {
         </Field>
 
         <Field
+          id="f-leaderCollege"
+          label="College / Institution"
+          required
+          error={errors.leaderCollege}
+        >
+          <input
+            type="text"
+            name="leaderCollege"
+            placeholder="College name"
+            value={form.leaderCollege}
+            onChange={e => set('leaderCollege', e.target.value)}
+          />
+        </Field>
+
+        <Field
           id="f-leaderContact"
           label="Contact number"
           required
@@ -355,6 +377,16 @@ export default function Register() {
           />
         </Field>
 
+        <Field label="College — member 2">
+          <input
+            type="text"
+            name="member2College"
+            placeholder="College name"
+            value={form.member2College}
+            onChange={e => set('member2College', e.target.value)}
+          />
+        </Field>
+
         <Field label="Contact — member 2">
           <input
             type="tel"
@@ -372,6 +404,16 @@ export default function Register() {
             placeholder="Full name"
             value={form.member3}
             onChange={e => set('member3', e.target.value)}
+          />
+        </Field>
+
+        <Field label="College — member 3">
+          <input
+            type="text"
+            name="member3College"
+            placeholder="College name"
+            value={form.member3College}
+            onChange={e => set('member3College', e.target.value)}
           />
         </Field>
 

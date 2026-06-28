@@ -48,7 +48,7 @@ const features = [
       </svg>
     ),
     title: 'Industry Talks',
-    desc: 'Keynotes from leaders in intelligent systems and space tech.',
+    desc: 'Keynotes from leaders in embedded systems, communication tech, and space applications.',
     color: '#FF6B88',
   },
 ]
@@ -122,7 +122,7 @@ export default function Landing() {
             margin: '0 auto 36px',
           }}
         >
-          SVNIT Surat's premier technical symposium exploring the convergence of intelligent
+          SVNIT Surat's premier hackathon exploring the convergence of
           electronic systems, communication networks, and space technology.
         </p>
 
