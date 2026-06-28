@@ -113,6 +113,20 @@ export default function Landing() {
           </span>
         </h1>
 
+        <p
+          style={{
+            color: '#4A6490',
+            fontWeight: 400,
+            fontSize: 15,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            margin: '-8px 0 36px',
+            lineHeight: 1.6,
+          }}
+        >
+          IEEE SVNIT SB &middot; IEEE SCET SB &middot; IEEE MARWADI UNIVERSITY SB &middot; IEEE GUJARAT SECTION
+        </p>
+
         <div
           style={{
             display: 'flex',
